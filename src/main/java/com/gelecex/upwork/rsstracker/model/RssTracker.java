@@ -1,7 +1,10 @@
 package com.gelecex.upwork.rsstracker.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author obetron
@@ -9,6 +12,9 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class RssTracker {
+@ToString
+@Entity
+@Table(name = "rss_tracker")
+public class RssTracker extends BaseEntity {
 
 }
